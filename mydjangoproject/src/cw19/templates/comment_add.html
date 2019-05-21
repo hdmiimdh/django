@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<form action="http://127.0.0.1:8000/cw19/add/" method="POST">
+{% extends 'base.html' %}
+{% block title %}Title{% endblock %}
+{% block content %}
+<form action="{% url 'comment_add' %}" method="POST">
 
     <p>
         Firstname
@@ -25,6 +21,4 @@
     </p>
     <br><input type="submit" name="submit", value="Post">
 </form>
-</body>
-
-</html>
+{% endblock %}

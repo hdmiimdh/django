@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cw19',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            'templates'
+            'templates',
+            'cw19.templates'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
