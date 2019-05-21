@@ -2,23 +2,8 @@
 {% block title %}Title{% endblock %}
 {% block content %}
 <form action="{% url 'comment_add' %}" method="POST">
+    {{form.as_p}}
 
-    <p>
-        Firstname
-        <input type="text" name="firstname">
-    </p>
-    <p>
-        Lastname
-        <input type="text" name="lastname">
-    </p>
-    <p>
-        Age
-        <input type="number" name="age">
-    </p>
-    <p>
-        Comment
-        <textarea name="comment"></textarea>
-    </p>
-    <br><input type="submit" name="submit", value="Post">
+    <input type="submit" name="submit", value="Post">
 </form>
 {% endblock %}
